@@ -162,7 +162,7 @@ def main():
         get_updated_data()
 
         application = ApplicationBuilder().token(
-            BOT_TOKEN).build()
+            "BOT_TOKEN").build()
 
         application.add_handler(CommandHandler('start', start))
         application.add_handler(CommandHandler('update', force_update))
